@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/sections/header.css">
     <link rel="stylesheet" href="./src/sections/searchSection.css">
+    <link rel="stylesheet" href="./src/sections/contentField.css">
+    <link rel="stylesheet" href="./src/sections/modal.css">
   </head>
   <body>
     <header class="header">
@@ -37,9 +39,14 @@
         <ul id="contentField_list">
         </ul>
         <button id="nextPage_btn"> > </button>
+
+        <div id="modal" class="opened">
+        <button id="close"></button>
+      </div>
       </div>
     </section>
     </main>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/open.js"></script>
   </body>
 </html>

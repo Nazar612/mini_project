@@ -3,8 +3,10 @@ import axios, {isCancel, AxiosError} from "axios";
 const searchSection_form = document.querySelector("#searchSection_form");
 const searchSection_form_input = document.querySelector("#searchSection_form_input");
 const nextPage_btn = document.querySelector("#nextPage_btn");
-const contentField_list = document.querySelector("#contentField_list")
-const serverURL = `http://localhost:3000`
+export const contentField_list = document.querySelector("#contentField_list")
+
+export const serverURL = `http://localhost:3000`
+
 let page = 1;
 async function getPosts() {
     let params = new URLSearchParams({
@@ -21,7 +23,7 @@ getPosts()
 function renderPosts(data) {
     const markup = data.map(({id,webformatURL,likes,favorites,user}) => {
         return `<li class="contentField_list_item" id="${id}">
-          <img src="${webformatURL}" alt="Placeholder" class="contentField_list_item_img">
+          <img id="${id} "src="${webformatURL}" alt="Placeholder" class="contentField_list_item_img">
 
 
           <div class="contentField_list_item_panel">
