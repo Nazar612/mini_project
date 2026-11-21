@@ -13,7 +13,7 @@ a {
 }
 
 .container {
-    width: 1200px;
+    width: 1300px;
     margin-left: 5px;
     margin-left: 5px;
     padding-left: 15px;
@@ -28,5 +28,9 @@ a {
     align-items: center;
 }
 
+.main {
+    background-color: rgb(11, 1, 24);
+    color: bisque;
+}
 
 

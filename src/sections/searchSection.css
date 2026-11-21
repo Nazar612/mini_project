@@ -34,3 +34,20 @@
 
     background-color: bisque;
 }
+#contentField_list {
+    display: grid;
+    grid-template-columns: 640px 640px;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    /* align-items: center; */
+}
+
+.contentField_list_item_img {
+    border-radius: 20px;
+    border-style: none;
+}
+
+.searchSection {
+    margin-bottom: 30px;
+}
