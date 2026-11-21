@@ -1,0 +1,36 @@
+.searchSection_title {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.searchSection_title::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: aquamarine;
+}
+
+#searchSection_form_input {
+    padding: 10px 0px 10px 0px;
+    width: 320px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-style: none;
+
+    background-color: rgb(204, 229, 252);
+}
+
+#searchSection_form_btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: none;
+
+    padding: 10px 0px 10px 0px;
+
+    background-color: bisque;
+}
